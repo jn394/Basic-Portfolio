@@ -79,3 +79,59 @@ input[type=text], input[type=email], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 40%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+h3 {
+    background-color: #4aaaa5;
+    padding: 10px;
+    text-align: center;
+}
+
+/* img {
+    height: 200px;
+    width: 200px;
+} */
+
+h2 {
+    color:#4aaaa5;
+}
+
+hr {
+    color: #666666;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    width: 960px;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+p {
+    color: #666666;
+}
