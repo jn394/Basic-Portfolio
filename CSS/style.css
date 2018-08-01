@@ -24,7 +24,7 @@ li:last-child {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #4aaaa5;
 }
 
 #MyName {
@@ -50,6 +50,7 @@ body {
     margin: auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url(../Images/washi/washi.png);
+    color: #666666;
 }
 
 footer {
@@ -66,6 +67,7 @@ footer {
 #profilepic {
     height: 200px;
     width: 200px;
+    margin: 20px;
     float: left;
 }
 
@@ -78,6 +80,19 @@ input[type=text], input[type=email], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1d4442;
 }
 
 .row {
@@ -93,7 +108,8 @@ input[type=text], input[type=email], select, textarea {
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 40%;
+    width: 33.33%;
+    height: 250px;
 }
 
 /* Clear floats after rows */ 
@@ -103,17 +119,24 @@ input[type=text], input[type=email], select, textarea {
     clear: both;
 }
 
+content {
+    padding: 10px;
+}
+
 /* Content */
 h3 {
     background-color: #4aaaa5;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
+    position: relative;
+    top: -80px;
 }
 
-/* img {
-    height: 200px;
-    width: 200px;
-} */
+img {
+    height: 100%;
+    width: 100%;
+}
 
 h2 {
     color:#4aaaa5;
@@ -130,8 +153,11 @@ hr {
     height: auto;
     margin-top: 30px;
     padding: 20px;
+    margin-bottom: 90px;
 }
 
 p {
-    color: #666666;
+    line-height: 25px;
+    text-indent: 20px;
+    margin-top: 0;s
 }
